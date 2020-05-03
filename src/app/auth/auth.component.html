@@ -41,12 +41,13 @@
           required>
       </div>
       <div>
-        <button [disabled]="!authForm.valid" type="submit" class="btn btn-primary">{{ isLoginMode ? 'Login' : 'Sign Up' }}</button>
+        <button [disabled]="!authForm.valid" type="submit" class="btn btn-primary">{{ isLoginMode ?
+          'Log In' : 'Sign Up' }}</button>
       </div>
       <br>
       <div>
         <button type="button" class="btn btn-default" (click)="onSwitchMode()">
-          Switch to {{ isLoginMode ? 'Sign Up' : 'Login' }}
+          Switch to {{ isLoginMode ? 'Sign Up' : 'Log In' }}
         </button>
       </div>
     </form>
